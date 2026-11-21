@@ -1,0 +1,25 @@
+{
+  "name": "store-campaign-synth",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "generate": "node tools/generate-data.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "smoke": "node tools/dom-smoke.mjs",
+    "e2e": "node tools/e2e.mjs"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.4.0",
+    "jsdom": "^31.0.1",
+    "playwright": "^1.56.1",
+    "vite": "^6.3.0"
+  }
+}
